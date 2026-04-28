@@ -1,0 +1,257 @@
+
+/* 🌍 Global */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #e8f5e9);
+}
+
+/* 🔥 Navbar */
+.navbar {
+  background: linear-gradient(90deg, #00c853, #2196f3);
+  color: white;
+  padding: 15px;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* 📦 Dashboard Layout */
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* 🟩 Sidebar */
+.sidebar {
+  width: 220px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.sidebar button {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 12px;
+  border: none;
+  background: #2196f3;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sidebar button:hover {
+  background: #00c853;
+}
+
+/* 🧾 Main Content */
+.main {
+  flex: 1;
+}
+
+/* 📊 Cards */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* 💰 Summary Boxes */
+.summary-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.summary-item {
+  flex: 1;
+  padding: 20px;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.total {
+  background: linear-gradient(45deg, #00c853, #64dd17);
+}
+
+.top-category {
+  background: linear-gradient(45deg, #2196f3, #42a5f5);
+}
+
+/* 📝 Form */
+input {
+  padding: 10px;
+  margin: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background: #00c853;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2196f3;
+}
+
+/* 📋 Expense List */
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  background: #f5f5f5;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+}
+
+.expense-item:hover {
+  background: #e0f2f1;
+}
+
+/* ✏️ Buttons */
+.edit-btn {
+  background: orange;
+  margin-right: 5px;
+}
+
+.delete-btn {
+  background: red;
+}
+
+/* 📊 Alert Text */
+.alert {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* =========================
+   🔐 LOGIN SCREEN STYLING 
+   ========================= */
+
+
+.login-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #e0f7fa, #e8f5e9); /* Dashboard wala background */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+/* Vertical Login Card */
+.login-card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px; /* Dashboard card se match karta hua */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column; /* Vertical Layout */
+  text-align: center;
+  gap: 15px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.login-card h2 {
+  margin: 0;
+  color: #333;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.login-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Input Fields Groups */
+.input-group {
+  width: 100%;
+}
+
+.login-card input {
+  width: 90%; /* Padding ke saath adjust karne ke liye */
+  padding: 12px;
+  margin: 0; /* Purana margin hata diya */
+  border: 1.5px solid #eee;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.login-card input:focus {
+  border-color: #2196f3;
+  outline: none;
+  box-shadow: 0 0 8px rgba(33, 150, 243, 0.2);
+}
+
+/* Login Button (Dashboard se matching gradient) */
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  border: none;
+  background: linear-gradient(90deg, #00c853, #2196f3);
+  color: white;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 200, 83, 0.3);
+}
+
+.login-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(33, 150, 243, 0.4);
+  background: linear-gradient(90deg, #2196f3, #00c853); /* Color flip on hover */
+}
+
+/* Footer text */
+.signup-footer {
+  font-size: 13px;
+  color: #888;
+  margin-top: 15px;
+}
+
+/* Logout Button (Top Right corner fix) */
+.logout-btn {
+  background: #ff5252;
+  font-size: 14px;
+  padding: 8px 15px;
+}
+
+.logout-btn:hover {
+  background: #d32f2f;
+}
